@@ -11,11 +11,11 @@ Software:
 
 
 Format SSD:
-	determine what file format you want your drive in
-	choose a suitable fs that allows Raspi OS to read and write.
+- determine what file format you want your drive in
+- choose a suitable fs that allows Raspi OS to read and write.
 
 Mounting SSD:
-	Connect  drive check the mounted drives and their partitions.
+- Connect  drive check the mounted drives and their partitions.
 	```
 	lsblk
 	```
