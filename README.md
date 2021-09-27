@@ -4,7 +4,7 @@ Make your own server using a raspberry pi. You will need a raspberry pi and  a U
 
 Hardware:
 - Raspberry Pi 4: 4gb Ram
-- Seargate external SSD: 500gb
+- Seagate external SSD: 1TB 
 
 Software:
 - NGINX
@@ -57,8 +57,18 @@ Download & SetUp NGINX:
 	}
 	```
 
-Auto mount ssd on startup:
+Auto Mount SSD on startup:
 - check for the UUID, careful to make sure it is the correct one
 	```
 	blkid
+	```
+- now we check it was mounted correctly
+	```
+	NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+	sda           8:0    0 931.5G  0 disk
+	├─sda1        8:1    0   200M  0 part
+	└─sda2        8:2    0 931.2G  0 part /var/www/media/ssd1
+	mmcblk0     179:0    0 119.1G  0 disk
+	├─mmcblk0p1 179:1    0   256M  0 part /boot
+	└─mmcblk0p2 179:2    0 118.9G  0 part /
 	```
